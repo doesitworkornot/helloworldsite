@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная гениальная страница</title>
   {% load static %}
-  <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" type="text/css">
 </head>
 <body style="background: silver">
   <div class="jumbotron">
@@ -16,14 +16,13 @@
         {% endblock %}
         <p>
           <a href="/" class="btn btn-success btn-lg">Главная страница</a>
-          <a href="/news" class="btn btn-primary btn-lg">Новости &raquo;</a>
+          <a href="/news" class="btn btn-primary btn-lg">Хочешь больше? &raquo;</a>
+          <a href="contact" class="btn btn-info btn-lg">Не стесняйся, пиши</a>
         </p>
       </div>
     </div>
     <div class="container">
       <img src="{% static 'mainApp/image/15737112730031.jpg' %}" class="img-thumbnail">
-      <hr>
-      &copy; Все права защищены 2018
     </div>
 
 </body>
